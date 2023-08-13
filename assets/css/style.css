@@ -3,7 +3,7 @@
   }
 /* general appearance of page */
   body {
-    font-family: Arial;
+    font-family: Helvetica, serif;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -19,16 +19,41 @@
     color: #fff;
   }
 
+  header h1 {
+    font-style: oblique;
+    font-size: 300%;
+    font-variant: small-caps;
+    text-shadow: 3px 5px rgb(19, 117, 121);
+
+  }
+
   /* nav bar background display */
   nav {
     display: flex;
+    justify-content: space-evenly;
     background-color: bisque;
   }
 
   /* nave bar text display */
   nav a {
     color: rgb(19, 117, 121);
+    font-weight: bold;
     padding: 15px 30px;
     text-decoration: none;
     text-align: center;
+  }
+
+
+
+
+
+
+
+
+/* bottom of css-adjust layout to viewport */
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
   }
