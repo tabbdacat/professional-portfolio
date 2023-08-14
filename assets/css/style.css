@@ -34,7 +34,7 @@
     background-color: bisque;
   }
 
-  /* nave bar text display */
+  /* nav bar text display */
   nav a {
     color: rgb(19, 117, 121);
     font-weight: bold;
@@ -47,7 +47,21 @@
 
 
 
+  footer {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: cadetblue;
+    color: #fff;
+    margin-top: auto;
+  }
 
+  footer h2 {
+    font-style: oblique;
+    font-size: 125%;
+    font-variant: small-caps;
+    text-shadow: 1px 3px rgb(19, 117, 121);
+  }
 
 
 /* bottom of css-adjust layout to viewport */
