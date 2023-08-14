@@ -95,23 +95,34 @@ h2 {
   .box-one {
     border-style: hidden;
     border-width: 1px;
-    padding: 10px;
+    padding: 2%;
     box-shadow: 10px 10px 10px #d8dadc;
-    margin: 20px;
+    margin: 10px 30px;
+  }
+
+  .box-one img {
+    width: 100%;
   }
 
   .box-two {
     border-style: hidden;
-    border-width: 1px;
-    padding: 10px;
+    padding: 12px;
     box-shadow: 10px 10px 10px #d8dadc;
-    margin: 20px;
-    flex: 0 0 300px;
+    margin: 10px 30px;
+    flex: 0 0 320px;
+  }
+
+  .box-two {
+    width: 50%
   }
 
   /* highlight when hovering */
   .box-one:hover, .box-two:hover {
     background-color: rgb(250, 238, 224);
+  }
+
+  .box-one:hover>header, .box-two:hover>header {
+    opacity: calc(100%);
   }
 
   .contact {
@@ -133,6 +144,7 @@ h2 {
     font-size: 125%;
     font-variant: small-caps;
     text-shadow: 1px 3px rgb(19, 117, 121);
+    margin: 5px;
   }
 
 
@@ -142,4 +154,5 @@ h2 {
     nav {
       flex-direction: column;
     }
-  }
+    }
+ 
