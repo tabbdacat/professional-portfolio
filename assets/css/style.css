@@ -8,14 +8,14 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    color: rgb(19, 117, 121)
+    color: var(--dark-blue);
   }
 
   /* page header layout/font/background color */
   header {
     padding: 40px;
     text-align: left;
-    background: cadetblue;
+    background: var(--light-blue);
     color: #fff;
   }
 
@@ -23,7 +23,7 @@
     font-style: oblique;
     font-size: 300%;
     font-variant: small-caps;
-    text-shadow: 3px 5px rgb(19, 117, 121);
+    text-shadow: 3px 5px var(--dark-blue);
 
   }
 
@@ -31,12 +31,11 @@
   nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: bisque;
+    background-color: var(--orange);
   }
-
   /* nav bar text display */
   nav a {
-    color: rgb(19, 117, 121);
+    color: var(--dark-blue);
     font-weight: bold;
     padding: 15px 30px;
     text-decoration: none;
@@ -44,12 +43,12 @@
   }
 
   nav a:hover {
-    color: #fff;
+    color: var(--highlight-text);
   }
 
   aside {
     flex: 1;
-    background-color: #b9c6ae;
+    background-color: var(--highlight-text);
     padding: 10px;
     text-align: left;
     font-size: 150%;
@@ -127,7 +126,7 @@ h2 {
 
   /* highlight when hovering */
   .box-one:hover, .box-two:hover {
-    background-color: rgb(250, 238, 224);
+    background-color: var(--highlight);
   }
 
   .box-one:hover>header, .box-two:hover>header {
@@ -139,22 +138,27 @@ h2 {
   }
 
   h3 {
-    color: rgb(19, 117, 121);
+    color: var(--dark-blue);
     padding: 15px 30px;
     display:inline-flex;
   }
 
   h3>a {
-    color: rgb(19, 117, 121);
+    color: var(--dark-blue);
     font-weight: bold;
     text-decoration: none;
 }
+
+h3>a:hover {
+    color:var(--highlight-text);
+}
+
 
   footer {
     width: 100%;
     padding: 15px;
     text-align: center;
-    background: cadetblue;
+    background: var(--light-blue);
     color: #fff;
     margin-top: auto;
   }
@@ -164,7 +168,7 @@ h2 {
     font-style: oblique;
     font-size: 125%;
     font-variant: small-caps;
-    text-shadow: 1px 3px rgb(19, 117, 121);
+    text-shadow: 1px 3px var(--dark-blue);
     margin: 5px;
   }
 
