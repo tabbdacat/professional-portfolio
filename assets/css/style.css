@@ -70,14 +70,26 @@
     margin: 15px 50px
 }
 
+.bio {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
 .bio img {
     border-radius: 40px;
+    flex: 1;
+}
+
+.bio p {
+    padding-left: 40px;
+    flex: 2;
+    font-size: 130%;
 }
 
 h2 {
     margin: 2% 0;
     font-size: 250%;
-
   }
 
 /* format project items */
