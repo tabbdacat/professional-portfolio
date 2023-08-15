@@ -4,7 +4,6 @@
 /* general appearance of page */
   body {
     font-family: Helvetica, serif;
-    margin: 20px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -48,22 +47,32 @@
     color: #fff;
   }
 
+  aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 10px;
+    text-align: left;
+    font-size: 150%;
+    font-style: oblique;
+    text-shadow: 1px 1px #fff;
+    line-height: 35px;
+  }
+
   main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
   }
 
-  aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 10px;
-    text-align: left;
-  }
 
   /* display size for center content */
 .main-section {
     flex: 4;
+    margin: 15px 50px
+}
+
+.bio img {
+    border-radius: 40px;
 }
 
 h2 {
@@ -132,7 +141,7 @@ h2 {
   h3 {
     color: rgb(19, 117, 121);
     padding: 15px 30px;
-    text-align: center;
+    display:inline-flex;
   }
 
   h3>a {
