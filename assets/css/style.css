@@ -1,52 +1,57 @@
 * {
     box-sizing: border-box;
-  }
+}
+
 /* general appearance of page */
-  body {
+body {
     font-family: Helvetica, serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
     color: var(--dark-blue);
-  }
+}
 
-  /* page header layout/font/background color */
-  header {
+/* page header layout/font/background color */
+header {
     padding: 40px;
     text-align: left;
     background: var(--light-blue);
     color: #fff;
-  }
+}
 
-  header h1 {
+/* Name in header text */
+header h1 {
     font-style: oblique;
     font-size: 300%;
     font-variant: small-caps;
     text-shadow: 3px 5px var(--dark-blue);
 
-  }
+}
 
-  /* nav bar background display */
-  nav {
+/* nav bar background display */
+nav {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--orange);
-  }
-  /* nav bar text display */
-  nav a {
+}
+
+/* nav bar text display */
+nav a {
     color: var(--dark-blue);
     font-weight: bold;
     padding: 15px 30px;
     text-decoration: none;
     text-align: center;
-  }
+}
 
-  nav a:hover {
+/* text color when hovering over nav links */
+nav a:hover {
     color: var(--highlight-text);
-  }
+}
 
-  aside {
+/* text display sidebar quote */
+aside {
     flex: 1;
     background-color: var(--highlight-text);
     padding: 10px;
@@ -55,141 +60,153 @@
     font-style: oblique;
     text-shadow: 1px 1px #fff;
     line-height: 35px;
-  }
+}
 
-  main {
+/* main section display */
+main {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-  }
+}
 
 
-  /* display size for center content */
+/* display size for center content */
 .main-section {
     flex: 4;
     margin: 15px 50px
 }
 
+/* Bio display */
 .bio {
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
 }
 
+/* bio img border shape, img size */
 .bio img {
     border-radius: 40px;
     flex: 1;
 }
 
+/* text display bio paragraph */
 .bio p {
     padding-left: 40px;
     flex: 2.5;
     font-size: 130%;
 }
 
+/* headings text display */
 h2 {
     margin: 2% 0;
     font-size: 250%;
-  }
+}
 
 /* format project items */
-  .projects {
+.projects {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-  }
+}
 
+/* text boxes in project photos */
+.projects header {
+    padding: 10px;
+    text-align: right;
+    font-size: 150%;
+    font-style: oblique;
+    opacity: calc(60%);
+    color: #fff;
+    position: absolute;
+}
 
-  .projects header {
-  padding: 10px;
-  text-align: right;
-  font-size: 150%;
-  font-style: oblique;
-  opacity: calc(60%);
-  color: #fff;
-  position: absolute;
-  }
-
-  .box-one {
+/* first box display */
+.box-one {
     border-style: hidden;
     border-width: 1px;
     padding: 2%;
     box-shadow: 10px 10px 10px #d8dadc;
     margin: 10px 30px;
-  }
+}
 
-  .box-one img {
+/* first box size */
+.box-one img {
     width: 100%;
-  }
+}
 
-  .box-two {
+/* smaller boxes size/display */
+.box-two {
     border-style: hidden;
     padding: 12px;
     box-shadow: 10px 10px 10px #d8dadc;
     margin: 10px 30px;
     flex: 0 0 320px;
-  }
-
-  .box-two {
     width: 50%
-  }
+}
 
-  /* highlight when hovering */
-  .box-one:hover, .box-two:hover {
+
+/* highlight when hovering */
+.box-one:hover,
+.box-two:hover {
     background-color: var(--highlight);
-  }
+}
 
-  .box-one:hover>header, .box-two:hover>header {
+/* text box color when hovering */
+.box-one:hover>header,
+.box-two:hover>header {
     opacity: calc(100%);
-  }
+}
 
-  .contact {
-    width:100%;
-  }
+/* contact section display */
+.contact {
+    width: 100%;
+}
 
-  h3 {
+/* contact section text display */
+h3 {
     color: var(--dark-blue);
     padding: 15px 30px;
-    display:inline-flex;
-  }
+    display: inline-flex;
+    font-size: 125%
+}
 
-  h3>a {
+/* text color links */
+h3>a {
     color: var(--dark-blue);
     font-weight: bold;
     text-decoration: none;
 }
 
+/* text color links when hovering */
 h3>a:hover {
-    color:var(--highlight-text);
+    color: var(--highlight-text);
 }
 
-
-  footer {
+/* footer display */
+footer {
     width: 100%;
     padding: 15px;
     text-align: center;
     background: var(--light-blue);
     color: #fff;
     margin-top: auto;
-  }
+}
 
-  /* footer text */
-  footer h2 {
+/* footer text */
+footer h2 {
     font-style: oblique;
     font-size: 125%;
     font-variant: small-caps;
     text-shadow: 1px 3px var(--dark-blue);
     margin: 5px;
-  }
+}
 
 
 /* bottom of css-adjust layout to viewport */
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     main,
     nav {
-      flex-direction: column;
+        flex-direction: column;
     }
-    }
- 
+}
