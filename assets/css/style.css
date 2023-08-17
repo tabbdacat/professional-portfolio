@@ -17,7 +17,7 @@ header {
     padding: 40px;
     text-align: left;
     background: var(--light-blue);
-    color: #fff;
+    color: var(--white);
 }
 
 /* Name in header text */
@@ -26,7 +26,7 @@ header h1 {
     font-size: 300%;
     font-variant: small-caps;
     text-shadow: 3px 5px var(--dark-blue);
-
+    padding: 10px 0px;
 }
 
 /* nav bar background display */
@@ -58,8 +58,9 @@ aside {
     text-align: left;
     font-size: 150%;
     font-style: oblique;
-    text-shadow: 1px 1px #fff;
+    text-shadow: 1px 1px var(--white);
     line-height: 35px;
+    
 }
 
 /* main section display */
@@ -102,7 +103,7 @@ h2 {
 
 /* format project items */
 .projects {
-    background-color: #fff;
+    background-color: var(--white);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,7 +117,7 @@ h2 {
     font-size: 150%;
     font-style: oblique;
     opacity: calc(60%);
-    color: #fff;
+    color: var(--white);
     position: absolute;
 }
 
@@ -188,7 +189,7 @@ footer {
     padding: 15px;
     text-align: center;
     background: var(--light-blue);
-    color: #fff;
+    color: var(--white);
     margin-top: auto;
 }
 
